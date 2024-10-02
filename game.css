@@ -1,0 +1,314 @@
+/* Choice Container */
+/*
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgba(86, 165, 235, 0.25);
+    background-color: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 150ms, box-shadow 150ms;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: #56a5eb;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice-text {
+    padding: 1.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f9fc;
+}
+
+.correct {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.incorrect {
+    background-color: #dc3545;
+    color: #fff;
+}
+*/
+
+/* HUD */
+/*
+#hud {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.hud-main-text {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #343a40;
+}
+*/
+/* Progress Bar */
+/*
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #56a5eb;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+
+#progressBarFull {
+    height: 3.4rem;
+    background-color: #56a5eb;
+    width: 0%;
+    transition: width 300ms;
+}
+*/
+/* Loader */
+/*
+#loader {
+    border: 1.6rem solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 1.6rem solid #56a5eb;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+*/
+/* Additional Enhancements */
+
+/*
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 150ms;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004085;
+}
+
+
+ */
+
+/* Body background styling with a universe theme */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('paris.jpg'); /* Make sure you have the correct path */
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(102, 28, 28);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content at the top */
+    height: 100vh;
+}
+
+/* Choice Container */
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 2rem;
+    border: 0.3rem solid rgba(86, 165, 235, 0.25);
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 150ms, box-shadow 150ms;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.6rem 1.6rem 0 rgba(86, 185, 235, 0.75);
+    transform: translateY(-0.2rem) rotate(1deg);
+}
+
+/* Colorful prefix backgrounds */
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff6384; /* Random color for variety */
+}
+
+.choice-container:nth-child(2) .choice-prefix {
+    background-color: #36a2eb;
+}
+
+.choice-container:nth-child(3) .choice-prefix {
+    background-color: #ffce56;
+}
+
+.choice-container:nth-child(4) .choice-prefix {
+    background-color: #4bc0c0;
+}
+
+/* Choice Text Styling */
+.choice-text {
+    padding: 1.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f7ff;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Correct and Incorrect Styling */
+.correct {
+    background-color: #28a745 !important;
+    color: #fff;
+}
+
+.incorrect {
+    background-color: #dc3545 !important;
+    color: #fff;
+}
+
+/* HUD */
+#hud {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.hud-main-text {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #343a40;
+}
+
+/* Progress Bar */
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #ffce56;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-top: 1.5rem;
+    background-color: #f1f7ff;
+}
+
+#progressBarFull {
+    height: 100%;
+    background-color: #ff6384;
+    width: 0%;
+    transition: width 300ms ease-in-out;
+}
+
+/* Question text styling */
+#question {
+    color: white; /* Replace with any color you want */
+    font-size: 2.4rem; /* Adjust size if needed */
+    font-weight: bold; /* You can make the text bold if desired */
+    text-align: center; /* Center the question text */
+    margin-bottom: 1.5rem; /* Space between the question and choices */
+}
+
+/* Loader */
+#loader {
+    border: 1.6rem solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 1.6rem solid #36a2eb;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Buttons styling */
+button {
+    background-color: #ff6384;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 150ms;
+}
+
+button:hover {
+    background-color: #ff4780;
+}
+
+button:active {
+    background-color: #ff3368;
+}
+
+
+

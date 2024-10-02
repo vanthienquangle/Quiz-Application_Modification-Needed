@@ -1,0 +1,128 @@
+/* #highScoresList {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 4rem;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 123, 255, 0.2);
+}
+
+.high-score {
+    font-size: 3.5rem; 
+    margin-bottom: 1rem; 
+    color: #007bff; 
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); 
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: transform 150ms, background-color 150ms;
+}
+
+.high-score:hover {
+    transform: scale(1.05);
+    background-color: #e9ecef; 
+    color: #0056b3; 
+} */
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('paris.jpg'); /* Replace with a colorful background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 50rem;
+    background: rgba(0, 0, 0, 0.75); /* Dark semi-transparent background */
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* High Scores Title */
+#finalScore {
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient title text */
+
+}
+
+/* High Scores List */
+#highScoresList {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 3rem;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 123, 255, 0.2);
+}
+
+.high-score {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffcc00;
+    background: linear-gradient(135deg, #36a2eb, #ff6384); /* Colorful gradient for each score */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.high-score:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.8rem 1.5rem rgba(255, 99, 132, 0.5); /* Vibrant shadow on hover */
+}
+
+/* Button Styling */
+a.btn {
+    text-decoration: none;
+    background-color: #36a2eb;
+    color: #fff;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    transition: background-color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
+    margin-top: 1rem;
+}
+
+a.btn:hover {
+    background-color: #ff6384;
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.6rem 1.2rem rgba(54, 162, 235, 0.5);
+}
+
+a.btn:active {
+    background-color: #ff3368;
+    transform: translateY(0);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #finalScore {
+        font-size: 3.5rem;
+    }
+
+    .high-score {
+        font-size: 2rem;
+    }
+
+    a.btn {
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+}

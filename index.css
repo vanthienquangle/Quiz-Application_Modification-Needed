@@ -1,0 +1,93 @@
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('paris.jpg'); /* Replace with your colorful background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Container for Centering Content */
+.container {
+    width: 90%;
+    max-width: 50rem;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    color: #ffcc00; /* Bright yellow for title */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+/* Button Styling */
+a.btn {
+    text-decoration: none;
+    background-color: #36a2eb;
+    color: #fff;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    transition: background-color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
+}
+
+a.btn:hover {
+    background-color: #ff6384; /* Color changes on hover */
+    transform: translateY(-0.2rem); /* Slight lift effect */
+    box-shadow: 0 0.6rem 1.2rem rgba(54, 162, 235, 0.5); /* Shadow on hover */
+}
+
+a.btn:active {
+    background-color: #ff3368;
+    transform: translateY(0); /* Reset lift effect */
+}
+
+/* Button Links for Play and High Scores */
+a.play-btn {
+    background-color: #4bc0c0; /* Custom color for Play button */
+}
+
+a.highscores-btn {
+    background-color: #ffce56; /* Custom color for High Scores button */
+}
+
+a.play-btn:hover {
+    background-color: #50d8d8; /* Hover effect for Play button */
+}
+
+a.highscores-btn:hover {
+    background-color: #ffd26c; /* Hover effect for High Scores button */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    a.btn {
+        font-size: 1.6rem;
+        padding: 1.2rem 2.5rem;
+    }
+}

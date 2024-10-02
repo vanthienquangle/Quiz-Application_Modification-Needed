@@ -1,0 +1,57 @@
+
+1.	question: HTML Element (<div>, <span>, etc. depending on your HTML structure).
+	Data Type: HTMLElement (from document.getElementById('question'))
+
+2.	choices: Array of HTML Elements.
+	Data Type: Array<HTMLElement> (from Array.from(document.getElementsByClassName('choice-text')))
+
+3.	progressText: HTML Element.
+	Data Type: HTMLElement (from document.getElementById('progressText'))
+
+4.	scoreText: HTML Element.
+	Data Type: HTMLElement (from document.getElementById('score'))
+
+5.	progressBarFull: HTML Element.
+	Data Type: HTMLElement (from document.getElementById('progressBarFull'))
+
+6.	loader: HTML Element.
+	Data Type: HTMLElement (from document.getElementById('loader'))
+
+7.	game: HTML Element.
+	Data Type: HTMLElement (from document.getElementById('game'))
+
+8.	currentQuestion: Object representing the current question.
+	Data Type: Object
+
+9.	acceptingAnswers: Boolean that tracks whether the user can answer.
+	Data Type: Boolean
+
+10.	score: Number that keeps track of the user's score.
+	Data Type: Number
+
+11.	questionCounter: Number tracking the current question number.
+	Data Type: Number
+
+12.	availableQuesions: Array of remaining questions.
+	Data Type: Array<Object>
+
+13.	questions: Array of questions fetched from the API.
+	Data Type: Array<Object>
+
+14.	loadedQuestions: Object containing the fetched data from the API.
+	Data Type: Object (API response in JSON format)
+
+15.	formattedQuestion: Object representing a formatted version of the question, including the question text and answer choices.
+	Data Type: Object
+
+16.	answerChoices: Array of strings containing the incorrect answers.
+	Data Type: Array<String>
+
+17.	selectedChoice: HTML Element representing the user’s selected choice.
+	Data Type: HTMLElement
+
+18.	selectedAnswer: String or Number representing the answer selected by the user.
+	Data Type: String (as extracted from data-number attribute)
+    
+19.	classToApply: String that holds either "correct" or "incorrect" based on whether the user's answer is right or wrong.
+	Data Type: String
